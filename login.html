@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GARDEN MINI MART</TITLE>
+
+<style>
+form{
+position:absolute;
+text-align:center;}
+
+body {
+    background-image: url("logo.jpg");
+background-repeat: no-repeat;
+background-size:cover;
+background-color: #8A5C2E;
+background-position: right down;
+background-attachment:fixed;
+
+
+}
+h1{text-align: center;
+
+font-style:oblique;
+
+}
+
+body {
+  font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  padding: 20px 50px 200px;
+  font-size: 13px;
+width 100%;
+  text-align: center;
+  
+}
+
+ul {
+  text-align: left;
+width:100%;
+  display: inline;
+  margin: 0;
+  padding: 15px 4px 17px 0;
+  list-style: none;
+
+  
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+ul li {
+  font: bold 12px/18px sans-serif;
+  display: inline-block;
+  margin-right: -4px;
+  position: relative;
+  padding: 15px 20px;
+  background: #fff;
+  cursor: pointer;
+  width:100px;
+  
+  
+  -moz-transition: all 0.2s;
+  
+  
+  transition: all 0.2s;
+}
+ul li:hover {
+  background: #9F9F93;
+  color: #fff;
+}
+ul li ul {
+  padding: 0;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 150px;
+  
+  -moz-box-shadow: none;
+  box-shadow: none;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  
+  -moz-transition: opacity 0.2s;
+  
+  -transition: opacity 0.2s;
+}
+ul li ul li { 
+  background: #9F9F93; 
+  display: block; 
+  color: #fff;
+  text-shadow: 0 -1px 0 #000;
+}
+ul li ul li:hover { background: #666; }
+ul li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+
+</style>
+</head><body>
+
+<div class="fixed">
+<header>
+<form>
+<ul>
+<li><a href="wtproject.html" style="text-decoration:none; color: inherit">Home</a></li>
+  <li>About</li>
+  <li>
+    GAS
+    <ul>
+      <li>REGULAR</li>
+      <li>PREMIUM</li>
+      <li>SUPER</li>
+    </ul>
+  </li>
+  <li>GROCERIES</li>
+<li>DELI</li>
+<li><a href="http://nylottery.ny.gov/wps/portal/Home/Lottery/Home" style="text-decoration:none; color: inherit"> LOTTTO</a></li>
+<li><a href="login.html" style="text-decoration:none; color: inherit">SIGN-IN</a></li>
+  <li>
+  Contact
+  </li>
+</ul>
+
+</form>
+</div>
+<h1><img src="title.png" alt="GARDEN MINI DELI" style="width:500px;height:150px"> </h1><br>
+
+<form name="POST" action="loginp.php"
+<onsubmit="return validateForm()" method="post" style="margin:0 auto" align=center><br>
+ E-mail id:
+  <input type="email"  id="mail" name="mail" required>
+ Password  :
+<input type="password"  id="repd" name="repd"  minlength="8" required>
+<input type="submit" value="login">
+</form>
+
+<h1><a href="signup.html" style="text-decoration:none; color: inherit"><p><img src="signup.png" align=center></a></h1>
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GARDEN MINI MART</TITLE>
+
+<style>
+form{
+position:absolute;
+text-align:center;}
+
+
+body {
+    background-image: url("logo.jpg");
+background-repeat: no-repeat;
+background-size:cover;
+background-color: #8A5C2E;
+background-position: right down;
+background-attachment:fixed;
+
+}
+h1{text-align: center;
+
+font-style:oblique;
+
+}
+form {text-align: center
+      }
+h3{text-align: center;
+letter-spacing: 5px;
+background-color: white;
+ word-spacing: 10px;}
+body {
+  font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  padding: 20px 50px 200px;
+  font-size: 13px;
+width 100%;
+  text-align: center;
+  
+}
+
+ul {
+  text-align: left;
+width:100%;
+  display: inline;
+  margin: 0;
+  padding: 15px 4px 17px 0;
+  list-style: none;
+
+  
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+ul li {
+  font: bold 12px/18px sans-serif;
+  display: inline-block;
+  margin-right: -4px;
+  position: relative;
+  padding: 15px 20px;
+  background: #fff;
+  cursor: pointer;
+  width:100px;
+  
+  
+  -moz-transition: all 0.2s;
+  
+  
+  transition: all 0.2s;
+}
+ul li:hover {
+  background: #9F9F93;
+  color: #fff;
+}
+ul li ul {
+  padding: 0;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 150px;
+  
+  -moz-box-shadow: none;
+  box-shadow: none;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  
+  -moz-transition: opacity 0.2s;
+  
+  -transition: opacity 0.2s;
+}
+ul li ul li { 
+  background: #9F9F93; 
+  display: block; 
+  color: #fff;
+  text-shadow: 0 -1px 0 #000;
+}
+ul li ul li:hover { background: #666; }
+ul li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+
+</style><body>
+
+<div class="fixed">
+
+<form><br>
+<ul>
+<li><a href="wtproject.html" style="text-decoration:none; color: inherit">Home</a></li>
+  <li><a href="About.html" style="text-decoration:none; color: inherit">About</a></li>
+  <li>
+    GAS
+    <ul>
+      <li>REGULAR</li>
+      <li>PREMIUM</li>
+      <li>SUPER</li>
+    </ul>
+  </li>
+  <li>GROCERIES</li>
+<li>DELI</li>
+<li><a href="http://nylottery.ny.gov/wps/portal/Home/Lottery/Home" style="text-decoration:none; color: inherit"> LOTTTO</a></li>
+<li><a href="login.html" style="text-decoration:none; color: inherit">SIGN-IN</a></li>
+  <li>
+  Contact
+  </li>
+</ul>
+</form>
+</div>
+
+
+<h1><img src="title.png" alt="GARDEN MINI DELI" style="width:500px;height:150px"> </h1>
+
+
+
+  
+  
+</head>
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["firstname"].value;
+    if (x == null || x == "") {
+        alert("firstName must be filled out");
+        return false;
+
+    }
+
+
+}
+function validateForm() {
+    var y = document.forms["myForm"]["lastname"].value;
+    if (y == null || y == "") {
+        alert("lastname must be filled out");
+        return false;
+}
+}
+function validateForm() {
+    var z = document.forms["myForm"]["username"].value;
+    if (z== null || z == "") {
+        alert("username must be filled out");
+        return false;
+}
+}
+function validateForm() {
+    var w= document.forms["myForm"]["pd"].value;
+    if (w == null || w ==""||w=="abcdefgh"||w=="password"||w=="username"||w=="123456"||w=="iloveyou"||w=="maristcollege"||w=="welcome"||w<8) {
+        alert("please give a strong password");
+        return false;}
+if(document.forms["myForm"]["pd"].value==document.forms["myForm"]["username"].value)
+{
+alert(" Dont give password same as username");
+return false;
+}
+if(document.forms["myForm"]["pd"].value.length < 8)
+{
+alert("password must be 8 characters");
+return false;
+}
+
+if(document.forms["myForm"]["pd"].value != document.forms["myForm"]["repd"].value){
+alert("passwords are not matched")
+return false;
+}
+if(document.forms["myForm"]["pd"].value == document.forms["myForm"]["repd"].value){
+alert("passwords are  matched")
+return w;
+
+
+}
+function validateForm() {
+    var s = document.forms["myForm"]["repd"].value;
+    if (s == null || s == "") {
+        alert("password must be filled out");
+        return false;
+}
+
+
+}
+
+}
+
+
+
+</script>
+
+<form method="POST" action="registered.php">
+
+
+First name:<br>
+<input type="text" id="firstname" name="firstname" autofocus required></br>
+
+
+Last name:<br>
+<input type="text"  id="lastname" name="lastname" required></br>
+Chosen username:<br>
+<input type="text"  id="username" name="username" required></br>
+
+  E-mail:<br>
+
+  <input type="email" id="mail" name="mail" required>
+</br>
+
+
+User password:<br>
+<input type="password" name="pd"  minlength="8" required></br>
+Re-type password:<br>
+<input type="password"  id="repd"name="repd" required
+></br>
+Birthdate:<br>
+  <input type="date" id="bdaytime" name="bdaytime" required></br><br>
+
+<input type="submit" value="submit">
+
+</form>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
